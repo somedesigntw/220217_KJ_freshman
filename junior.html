@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link href="https://sgoods.info/kj-admi/css/kj-plugins.css" rel="stylesheet">
+<link href="https://sgoods.info/kj-admi/css/kj-style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://sgoods.info/kj-admi/css/kj-custom-admi00-211201.css">
+<style>
+    #header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a, #header #header-wrap #logo a span {
+        font-size: 28px;
+    }
+    #header .header-inner #logo, #header #header-wrap #logo {
+        margin-top: 0px !important;
+        color: #ffffff;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+    /* -------------------------------------
+    fix bootstrap
+    ------------------------------------- */
+    /* 版面滿版 */
+    #main {
+        width: 100% !important;
+    }
+    .div_news_table_main {
+        width: 100% !important;
+    }
+    .WID_87_1_d20c79f746ccd554e41e05002c304a24fb9e8b33 div.contentArea {
+        padding-top: 0px !important;
+    }
+    .WID_87_1_d20c79f746ccd554e41e05002c304a24fb9e8b33 #div_news_table_main {
+        margin: 0px !important;
+    }
+    /* logo */
+    .WID_0_5_a63e0ddbad42c4b2cbd49a247a052cb38a472df5#header {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        .WID_0_5_a63e0ddbad42c4b2cbd49a247a052cb38a472df5#header {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    }
+    /* MENU--------------------------------------------- */
+    .main-menu-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    /* 桌機選單 between 分佈 */
+    *, ::after, ::before {
+    box-sizing: initial;
+    }
+    /* 導覽列 */
+    .WID_87_1_d20c79f746ccd554e41e05002c304a24fb9e8b33 #div_news_table_1_topbanner {
+        display: none;
+    }
+    .WID_87_1_d20c79f746ccd554e41e05002c304a24fb9e8b33 .sites-subpages-map {
+        display: none !important;
+    }
+    /* 背景色 */
+    /* div.pagecontent {
+        background-color: antiquewhite;
+    } */
+    /* 社群按鈕 */
+    .WID_0_4_510dd58b7f946c9e3916ba30ca5c0364dc25572b#quick_link {
+        padding-left: 10px;
+    }
+    /* footer logo */
+    .WID_0_5_c3fae78867733b5c97c19485792cb183936a64df #header_pic {
+        background-size: 100% !important;
+    }
+    .WID_87_25_6db7ed870620d6599e9889c2a04c2402d4bf0561#group {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    /* 手機改回 box-sizing: border-box 圖才會正常*/
+    @media (max-width: 768px) {
+        *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    }
+    /* img */
+    .img-rwd {
+        max-width: 90%; /* 桌機配合選單相衝 */
+        object-fit: cover; 
+        object-position: center center;
+        margin: 10px;
+    }
+    .border-box {
+        box-sizing: border-box;
+        border: 0px solid #eee;
+    }
+    .mt-50 {
+        margin-top: 50px;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+    .pl-50 {
+        padding-left: 50px;
+    }
+    .pl-150 {
+        padding-left: 150px;
+    }
+    .kj-li {
+        margin-left: 20px;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    .kj-bg {
+        background-color: #FCF7F5;
+    }
+    #footer .copyright-content {
+            min-height: auto;
+            padding: 10px;
+            background-color: #023c7a;
+            font-size: 13px;
+            color: white;
+            font-weight: 500;
+        }
+    /* RWD */
+    @media only screen and (min-width: 767px) {
+        .kj-m {
+        display: none !important;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        /* mobile-menu-bg */
+        .mainMenu-open.dark #header .header-inner, .mainMenu-open.dark #header #header-wrap, .mainMenu-open #header:not(.submenu-light).dark .header-inner, .mainMenu-open #header:not(.submenu-light).dark #header-wrap {
+                background-color: #1a5fa5de !important;
+                height: 600px;
+            }
+        .kj-m {
+        display: block !important;
+        }
+        .kj-d {
+            display: none !important;
+        }
+        #footer {
+            line-height: 1.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid g-0">
+        <div class="kj-d">
+            <div class="d-flex justify-content-center flex-nowrap g-0" >
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6592" alt="" style="width: 100%;"></a>
+            </div>
+            <!-- 1 -->
+            <div id="new01-d"></div>
+            <div class="row row-cols-2 p-5">
+                <div class="row d-flex justify-content-center align-items-center" >
+                    <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6584" alt="">
+                </div>
+                <div class="row d-flex flex-wrap align-items-center pl-150 border-box">
+                    <ul>
+                        <li><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6585" alt="" class="mb-30"></li>
+                        <li><a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6901"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6541" alt="校長的話" class="d-block img-rwd kj-li"></a></li>
+                        <li><a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6927" target="_blank"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6546" alt="新生報到須知" class="d-block img-rwd kj-li"></a></li>
+                        <li><a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6905"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6544" alt="線上課程說明事項" class="d-block img-rwd kj-li"></a></li>
+                        <li><a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6906"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6543" alt="線上課程操作手冊" class="d-block img-rwd kj-li"></a></li>
+                        <!-- <li><a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6545" alt="暑假作業" class="d-block img-rwd kj-li"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div id="new02-d"></div>
+            <div class="row row-cols-2 p-5 kj-bg">
+                <div class="row d-flex flex-wrap justify-content-center align-items-center pl-150 border-box">
+                    <ul>
+                        <li><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6587" alt="課程專區" class="mb-30"></li>
+                        <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6907"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6547" alt="ESL課程" class="d-block img-rwd kj-li"></a>
+                        <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6552" alt="教科書版本" class="d-block img-rwd kj-li"></a>  -->
+                    </ul>
+                </div>
+                <div class=" row d-flex justify-content-center align-items-center">
+                    <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6586" alt="">
+                </div>
+            </div>
+            <!-- 3 -->
+            <div id="new03-d"></div>
+            <div class="row row-cols-2 p-5">
+                <div class="row d-flex justify-content-center align-items-center" >
+                    <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6588" alt="">
+                </div>
+                <div class="row d-flex flex-wrap justify-content-center align-items-center pl-150 border-box">
+                    <ul>
+                        <li><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6589" alt="" class="mb-30"></li>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2vK03mg8dHhpGp7PZrErZqH2gk1p3e_H5HC3CPEprCZ9IQ/viewform"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6575" alt="新生食宿調查" class="d-block img-rwd"></a>
+                        <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6576" alt="學校環境" class="d-block img-rwd kj-li"></a> -->
+                        <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6577" alt="每日作息" class="d-block img-rwd kj-li"></a> -->
+                        <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6910"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6578" alt="多元交通" class="d-block img-rwd kj-li"></a>
+                        <a href="http://www.kjsh.ntpc.edu.tw/ischool/publish_page/4/?cid=23"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6579" alt="學校住宿" class="d-block img-rwd kj-li"></a>
+                    </ul>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div id="new04-d"></div>
+            <div class="row row-cols-2 p-5 kj-bg">
+                <div class="row d-flex flex-wrap justify-content-center align-items-center pl-150 border-box">
+                    <ul>
+                        <li><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6591" alt="學生手冊" class="mb-30"></li>
+                        <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6913"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6581" alt="學生請假規定" class="d-block img-rwd kj-li"></a>
+                        <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6911"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6582" alt="生活服儀規定" class="d-block img-rwd kj-li"></a>
+                        <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6926"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6583" alt="學生生活公約" class="d-block img-rwd kj-li"></a>
+                    </ul>
+                </div>
+                <div class=" row d-flex justify-content-center align-items-center">
+                    <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6590" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
+        <div class="kj-m row row-cols-1 d-flex flex-wrap mb-50">
+            <div class="row d-flex justify-content-center flex-wrap g-0" >
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6542" alt="">
+            </div>
+            <div class="row d-flex justify-content-center mt-50" >
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6550" alt="">
+            </div>
+            <div class="row d-flex flex-wrap">
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6901"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6541" alt="校長的話" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6927" target="_blank"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6546" alt="新生報到須知" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6905"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6544" alt="線上課程說明事項" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6906"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6543" alt="線上課程操作手冊" class="d-block img-rwd kj-li"></a>
+                <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6545" alt="暑假作業" class="d-block img-rwd kj-li"></a>         -->
+            </div>
+            <div class="row d-flex justify-content-center mt-50">
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6553" alt="">
+            </div>
+            <div class="row d-flex flex-wrap">
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6907"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6547" alt="ESL課程" class="d-block img-rwd kj-li"></a>
+                <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6552" alt="教科書版本" class="d-block img-rwd kj-li"></a>            -->
+            </div>
+            <div class="row d-flex justify-content-center mt-50">
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6594" alt="">
+            </div>
+            <div class="row d-flex flex-wrap">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2vK03mg8dHhpGp7PZrErZqH2gk1p3e_H5HC3CPEprCZ9IQ/viewform"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6575" alt="新生食宿調查" class="d-block img-rwd"></a>
+                <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6576" alt="學校環境" class="d-block img-rwd kj-li"></a> -->
+                <!-- <a href="#"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6577" alt="每日作息" class="d-block img-rwd kj-li"></a> -->
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6910"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6578" alt="多元交通" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/ischool/publish_page/4/?cid=23"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6579" alt="學校住宿" class="d-block img-rwd kj-li"></a>
+            </div>
+            <div class="row d-flex justify-content-center mt-50">
+                <img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6580" alt="">
+            </div>
+            <div class="row d-flex flex-wrap">
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6913"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6581" alt="學生請假規定" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6911"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6582" alt="生活服儀規定" class="d-block img-rwd kj-li"></a>
+                <a href="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6926"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=6583" alt="學生生活公約" class="d-block img-rwd kj-li"></a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="widget">
+                                <img style="width: 500px;" src="https://sgoods.info/kj-admi/images/header_pic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="widget">
+                                        <div class="widget-title" style="display: flex; width:auto;">
+                                            <a href="https://www.youtube.com/channel/UC1xRC5OZmNQ0lVlwGv23NYw" target="_blank"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=266" alt="光仁中學Youtube"></a> 
+                                            <a href="http://www.kjsh.ntpc.edu.tw/ischool/publish_page/0/?cid=1233"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=3698" alt="光仁中學活動照片"></a>
+                                            <a href="https://www.facebook.com/Officialkjsh/" target="_blank"><img src="http://www.kjsh.ntpc.edu.tw/resource/openfid.php?id=267" alt="光仁中學FB粉絲頁"></a>
+                                            <!-- <img src="https://sgoods.info/kj-admi/images/index/kj-yt.png" alt="">
+                                            <img src="https://sgoods.info/kj-admi/images/index/kj-ig.png" alt=""> -->
+                                            <!-- <a href="https://www.facebook.com/Officialkjsh/" target="_blank"><img src="https://sgoods.info/kj-admi/images/index/kj-fb2.png" alt=""></a> -->
+                                        </div>
+                                        <ul class="list">
+                                            <li>學校地址: <br class="d-block d-lg-none">新北市板橋區中山路二段255巷18號</li>
+                                            <li>電話: (02)29615161</li>
+                                            <li>網站瀏覽建議使用IE 9.0 以上版本或Chrome/Firefox</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-content">
+                <div class="container">
+                    <div class="copyright-text text-center">
+                        © 
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> 
+                        天主教光仁高級中學 Kuang Jen Catholic High School. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer><!-- end: Footer -->
+    </div> 
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="https://sgoods.info/kj-admi/js/jquery.js"></script>
+    <script src="https://sgoods.info/kj-admi/js/kj-plugins.js"></script>
+    <!--Template functions-->
+    <script src="https://sgoods.info/kj-admi/js/kj-functions.js"></script>
+</body>
+</html>
+
+
